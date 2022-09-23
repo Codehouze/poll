@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       voteArray: [],
-      // Total vote given across all polls
+      // Total vote given across all polls   
       totalVotes: null,
     };
   },
