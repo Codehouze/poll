@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       voteArray: [],
-      // Total vote given across all polls   
+      // Total vote given across all polls
       totalVotes: null,
     };
   },
@@ -42,8 +42,6 @@ export default {
     this.watchState();
   },
   methods: {
-    // In use?
-    titleColor: "",
     // Main Poll - Easily adjustable
     watchState() {
       let pollState = useLocalStorage("pollState", [
