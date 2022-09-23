@@ -26,3 +26,9 @@ install dependencies
 run project
 
     npm run dev
+
+### Build
+
+build project
+
+    npm run dev
