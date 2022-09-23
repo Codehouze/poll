@@ -2,10 +2,21 @@
   <section class="flex justify-center h-screen container px-4 mx-auto">
     <main class="flex flex-col justify-center content-center gap-3">
       <div class="p-3 bg-gray-600" v-for="vote in voteArray" :key="vote.id">
-        <span class="flex font-bold" :class="[vote.titleColor]">{{ vote.title }}</span>
-        <progress :class="[vote.progressColor]" class="progress w-56 h-3" :value="[vote.value]" max="100"></progress>
+        <span class="flex font-bold" :class="[vote.titleColor]">{{
+          vote.title
+        }}</span>
+        <progress
+          :class="[vote.progressColor]"
+          class="progress w-56 h-3"
+          :value="[vote.value]"
+          max="100"
+        ></progress>
         <span class="ml-4">{{ vote.value }}%</span>
-        <button :class="[vote.btnColor]" class="btn rounded-none ml-4" @click="handleVote(vote.id)">
+        <button
+          :class="[vote.btnColor]"
+          class="btn rounded-none ml-4"
+          @click="handleVote(vote.id)"
+        >
           Vote
         </button>
       </div>
@@ -22,7 +33,7 @@ export default {
   data() {
     return {
       voteArray: [],
-      // Total vote given across all polls 
+      // Total vote given across all polls
       totalVotes: null,
     };
   },
@@ -96,7 +107,7 @@ export default {
         this.voteArray[index].value = findPercentage;
       }
     },
-    
+
     // Clears the Votes from localstorage
     clearAllVotes() {
       localStorage.clear();
