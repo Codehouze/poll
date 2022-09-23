@@ -46,7 +46,7 @@ export default {
     titleColor: "",
     // Main Poll - Easily adjustable
     watchState() {
-      let pollState = useLocalStorage("state", [
+      let pollState = useLocalStorage("pollState", [
         {
           title: "windows 10",
           titleColor: "text-success",
