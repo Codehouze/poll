@@ -1,0 +1,1 @@
+export { default as PollComponent} from "@/components/PollComponent.vue"
